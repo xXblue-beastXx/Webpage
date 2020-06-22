@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+        ul {
+        overflow:hidden;
+        margin: 0;
+        padding: 0;
+        list-style-type: none;
+        background-color: Dodgerblue;
+}
+    li {
+        float: left;
+}
+    ul li a {
+        display: block;
+        padding: 10px 20px;
+        color: white;
+        text-decoration: none;
+        text-align: center;
+}
+.parent-menu {
+       position: relative;
+}
+.sub-menu {
+       position: absolute;
+       top: 0;
+}
+</style>
+</head>
+<body>
+<ul>
+     <li class="parent-menu"><a href="#">Menu Item 1</a></li>
+         <ul>
+             <li class="sub-menu"><a href="#">Sub menu 1</a></li>
+             <li class="sub-menu"><a href="#">Sub menu 2</a></li>
+             <li class="sub-menu"><a href="#">Sub menu 3</a></li>
+         </ul>
+     <li><a href="#">Menu Item 2</a></li>
+     <li><a href="#">Menu Item 3</a></li>
+</ul>
+</body>
+</html>
