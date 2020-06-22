@@ -9,7 +9,7 @@
         list-style-type: none;
         background-color: Dodgerblue;
 }
-    li {
+       .primary-menu > li {
         float: left;
 }
     ul li a {
@@ -25,11 +25,12 @@
 .sub-menu {
        position: absolute;
        top: 0;
+       z-index: 1;
 }
 </style>
 </head>
 <body>
-<ul>
+<ul class="primary-menu">
      <li class="parent-menu"><a href="#">Menu Item 1</a></li>
          <ul>
              <li class="sub-menu"><a href="#">Sub menu 1</a></li>
