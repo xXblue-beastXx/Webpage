@@ -7,36 +7,39 @@
         margin: 0;
         padding: 0;
     }
-    ul li a {
+ ul li a {
         display: block;
         padding: 10px 20px;
         color: white;
         text-decoration: none;
         text-align: center;
 }
-    ul.primary-menu {
+ ul.primary-menu {
         overflow: hidden;
         background-color: Dodgerblue;
 }
-    ul.primary-menu > li {
+ ul.primary-menu > li {
         float: left;
 }
-.parent-menu > a {
+.primary-menu-item a {
        position: relative;
 }
 .sub-menu {
        position: absolute;
-       color: blue;
        background-color: darkorange;
        z-index: 1;
        border: 1px solid grey;
        box-shadow: 5px 5px 2px #aaa;
+       display: none;
+}
+.primary-menu-item:hover .sub-menu {
+      display: block;
 }
 </style>
     </head>
 <body>
 <ul class="primary-menu">
-     <li class="parent-menu"><a href="#">Menu Item 1</a>
+     <li class="primary-menu-item"><a href="#">Menu Item 1</a>
          <ul class="sub-menu">
              <li><a href="#">Sub menu 1</a></li>
              <li><a href="#">Sub menu 2</a></li>
